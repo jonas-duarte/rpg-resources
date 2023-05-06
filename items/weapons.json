@@ -1,6 +1,7 @@
 {
     "items": [
         {
+            "id": "weapon_club",
             "name": "Club",
             "props": {
                 "damage": "1d4",
@@ -13,6 +14,7 @@
             ]
         },
         {
+            "id": "weapon_dagger",
             "name": "Dagger",
             "props": {
                 "damage": "1d4",
@@ -25,6 +27,7 @@
             ]
         },
         {
+            "id": "weapon_greatclub",
             "name": "Greatclub",
             "props": {
                 "damage": "1d8",
@@ -37,6 +40,7 @@
             ]
         },
         {
+            "id": "weapon_handaxe",
             "name": "Handaxe",
             "props": {
                 "damage": "1d6",
@@ -49,6 +53,7 @@
             ]
         },
         {
+            "id": "weapon_javelin",
             "name": "Javelin",
             "props": {
                 "damage": "1d6",
@@ -61,6 +66,7 @@
             ]
         },
         {
+            "id": "weapon_light_hammer",
             "name": "Light hammer",
             "props": {
                 "damage": "1d4",
@@ -73,6 +79,7 @@
             ]
         },
         {
+            "id": "weapon_mace",
             "name": "Mace",
             "props": {
                 "damage": "1d6",
@@ -84,6 +91,7 @@
             ]
         },
         {
+            "id": "weapon_quarterstaff",
             "name": "Quarterstaff",
             "props": {
                 "damage": "1d6",
@@ -96,6 +104,7 @@
             ]
         },
         {
+            "id": "weapon_sickle",
             "name": "Sickle",
             "props": {
                 "damage": "1d4",
@@ -108,6 +117,7 @@
             ]
         },
         {
+            "id": "weapon_spear",
             "name": "Spear",
             "props": {
                 "damage": "1d6",
@@ -120,6 +130,7 @@
             ]
         },
         {
+            "id": "weapon_light_crossbow",
             "name": "Light crossbow",
             "props": {
                 "damage": "1d8",
@@ -132,6 +143,7 @@
             ]
         },
         {
+            "id": "weapon_dart",
             "name": "Dart",
             "props": {
                 "damage": "1d4",
@@ -144,6 +156,7 @@
             ]
         },
         {
+            "id": "weapon_shortbow",
             "name": "Shortbow",
             "props": {
                 "damage": "1d6",
@@ -156,6 +169,7 @@
             ]
         },
         {
+            "id": "weapon_sling",
             "name": "Sling",
             "props": {
                 "damage": "1d4",
@@ -168,6 +182,7 @@
             ]
         },
         {
+            "id": "weapon_battleaxe",
             "name": "Battleaxe",
             "props": {
                 "damage": "1d8",
@@ -180,6 +195,7 @@
             ]
         },
         {
+            "id": "weapon_flail",
             "name": "Flail",
             "props": {
                 "damage": "1d8",
@@ -191,6 +207,7 @@
             ]
         },
         {
+            "id": "weapon_glaive",
             "name": "Glaive",
             "props": {
                 "damage": "1d10",
@@ -203,6 +220,7 @@
             ]
         },
         {
+            "id": "weapon_greataxe",
             "name": "Greataxe",
             "props": {
                 "damage": "1d12",
@@ -215,6 +233,7 @@
             ]
         },
         {
+            "id": "weapon_greatsword",
             "name": "Greatsword",
             "props": {
                 "damage": "2d6",
@@ -227,6 +246,7 @@
             ]
         },
         {
+            "id": "weapon_halberd",
             "name": "Halberd",
             "props": {
                 "damage": "1d10",
@@ -239,6 +259,7 @@
             ]
         },
         {
+            "id": "weapon_lance",
             "name": "Lance",
             "props": {
                 "damage": "1d12",
@@ -251,6 +272,7 @@
             ]
         },
         {
+            "id": "weapon_longsword",
             "name": "Longsword",
             "props": {
                 "damage": "1d8",
@@ -263,6 +285,7 @@
             ]
         },
         {
+            "id": "weapon_maul",
             "name": "Maul",
             "props": {
                 "damage": "2d6",
@@ -275,6 +298,7 @@
             ]
         },
         {
+            "id": "weapon_morningstar",
             "name": "Morningstar",
             "props": {
                 "damage": "1d8",
@@ -286,6 +310,7 @@
             ]
         },
         {
+            "id": "weapon_pike",
             "name": "Pike",
             "props": {
                 "damage": "1d10",
@@ -298,6 +323,7 @@
             ]
         },
         {
+            "id": "weapon_rapier",
             "name": "Rapier",
             "props": {
                 "damage": "1d8",
@@ -310,6 +336,7 @@
             ]
         },
         {
+            "id": "weapon_scimitar",
             "name": "Scimitar",
             "props": {
                 "damage": "1d6",
@@ -322,6 +349,7 @@
             ]
         },
         {
+            "id": "weapon_shortsword",
             "name": "Shortsword",
             "props": {
                 "damage": "1d6",
@@ -334,6 +362,7 @@
             ]
         },
         {
+            "id": "weapon_trident",
             "name": "Trident",
             "props": {
                 "damage": "1d6",
@@ -346,6 +375,7 @@
             ]
         },
         {
+            "id": "weapon_war_pick",
             "name": "War Pick",
             "props": {
                 "damage": "1d8",
@@ -357,6 +387,7 @@
             ]
         },
         {
+            "id": "weapon_warhammer",
             "name": "Warhammer",
             "props": {
                 "damage": "1d8",
@@ -369,6 +400,7 @@
             ]
         },
         {
+            "id": "weapon_whip",
             "name": "Whip",
             "props": {
                 "damage": "1d4",
@@ -381,6 +413,7 @@
             ]
         },
         {
+            "id": "weapon_blowgun",
             "name": "Blowgun",
             "props": {
                 "damage": "1",
@@ -393,6 +426,7 @@
             ]
         },
         {
+            "id": "weapon_crossbow_hand",
             "name": "Crossbow, hand",
             "props": {
                 "damage": "1d6",
@@ -405,6 +439,7 @@
             ]
         },
         {
+            "id": "weapon_crossbow_heavy",
             "name": "Crossbow, heavy",
             "props": {
                 "damage": "1d10",
@@ -417,6 +452,7 @@
             ]
         },
         {
+            "id": "weapon_longbow",
             "name": "Longbow",
             "props": {
                 "damage": "1d8",
@@ -429,6 +465,7 @@
             ]
         },
         {
+            "id": "weapon_net",
             "name": "Net",
             "props": {
                 "damage": "0",
@@ -442,9 +479,10 @@
         }
     ],
     "actions": [
-        {
-            "id": "greataxe_attack",
-            "name": "Greataxe Attack",
+        {   
+            "useTagsReplacement": true,
+            "id": "{id}_attack",
+            "name": "{name} Attack",
             "icon": "https://cdn-icons-png.flaticon.com/512/771/771255.png",
             "script": [
                 [
@@ -457,8 +495,8 @@
                     "advantage"
                 ],
                 [
-                    "Damage",
-                    "Dice.roll(\"d12\") + Character.getProp(\"damage_bonus\")",
+                    "Damage {damage_type}",
+                    "Dice.roll(\"{damage}\") + Character.getProp(\"damage_bonus\")",
                     [
                         "critical",
                         "damage"
