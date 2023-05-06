@@ -1,0 +1,470 @@
+{
+    "items": [
+        {
+            "name": "Club",
+            "props": {
+                "damage": "1d4",
+                "damage_type": "bludgeoning",
+                "weight": 2,
+                "properties": "light"
+            },
+            "actions": [
+                "club_attack"
+            ]
+        },
+        {
+            "name": "Dagger",
+            "props": {
+                "damage": "1d4",
+                "damage_type": "piercing",
+                "weight": 1,
+                "properties": "finesse, light, thrown (range 20/60)"
+            },
+            "actions": [
+                "dagger_attack"
+            ]
+        },
+        {
+            "name": "Greatclub",
+            "props": {
+                "damage": "1d8",
+                "damage_type": "bludgeoning",
+                "weight": 10,
+                "properties": "two-handed"
+            },
+            "actions": [
+                "greatclub_attack"
+            ]
+        },
+        {
+            "name": "Handaxe",
+            "props": {
+                "damage": "1d6",
+                "damage_type": "slashing",
+                "weight": 2,
+                "properties": "light, thrown (range 20/60)"
+            },
+            "actions": [
+                "handaxe_attack"
+            ]
+        },
+        {
+            "name": "Javelin",
+            "props": {
+                "damage": "1d6",
+                "damage_type": "piercing",
+                "weight": 2,
+                "properties": "thrown (range 30/120)"
+            },
+            "actions": [
+                "javelin_attack"
+            ]
+        },
+        {
+            "name": "Light hammer",
+            "props": {
+                "damage": "1d4",
+                "damage_type": "bludgeoning",
+                "weight": 2,
+                "properties": "light, thrown (range 20/60)"
+            },
+            "actions": [
+                "light_hammer_attack"
+            ]
+        },
+        {
+            "name": "Mace",
+            "props": {
+                "damage": "1d6",
+                "damage_type": "bludgeoning",
+                "weight": 4
+            },
+            "actions": [
+                "mace_attack"
+            ]
+        },
+        {
+            "name": "Quarterstaff",
+            "props": {
+                "damage": "1d6",
+                "damage_type": "bludgeoning",
+                "weight": 4,
+                "properties": "versatile (1d8)"
+            },
+            "actions": [
+                "quarterstaff_attack"
+            ]
+        },
+        {
+            "name": "Sickle",
+            "props": {
+                "damage": "1d4",
+                "damage_type": "slashing",
+                "weight": 2,
+                "properties": "light"
+            },
+            "actions": [
+                "sickle_attack"
+            ]
+        },
+        {
+            "name": "Spear",
+            "props": {
+                "damage": "1d6",
+                "damage_type": "piercing",
+                "weight": 3,
+                "properties": "thrown (range 20/60), versatile (1d8)"
+            },
+            "actions": [
+                "spear_attack"
+            ]
+        },
+        {
+            "name": "Light crossbow",
+            "props": {
+                "damage": "1d8",
+                "damage_type": "piercing",
+                "weight": 5,
+                "properties": "ammunition (range 80/320), loading, two-handed"
+            },
+            "actions": [
+                "light_crossbow_attack"
+            ]
+        },
+        {
+            "name": "Dart",
+            "props": {
+                "damage": "1d4",
+                "damage_type": "piercing",
+                "weight": 0.25,
+                "properties": "finesse, thrown (range 20/60)"
+            },
+            "actions": [
+                "dart_attack"
+            ]
+        },
+        {
+            "name": "Shortbow",
+            "props": {
+                "damage": "1d6",
+                "damage_type": "piercing",
+                "weight": 2,
+                "properties": "ammunition (range 80/320), two-handed"
+            },
+            "actions": [
+                "shortbow_attack"
+            ]
+        },
+        {
+            "name": "Sling",
+            "props": {
+                "damage": "1d4",
+                "damage_type": "bludgeoning",
+                "weight": 0,
+                "properties": "ammunition (range 30/120)"
+            },
+            "actions": [
+                "sling_attack"
+            ]
+        },
+        {
+            "name": "Battleaxe",
+            "props": {
+                "damage": "1d8",
+                "damage_type": "slashing",
+                "weight": 4,
+                "properties": "versatile (1d10)"
+            },
+            "actions": [
+                "battleaxe_attack"
+            ]
+        },
+        {
+            "name": "Flail",
+            "props": {
+                "damage": "1d8",
+                "damage_type": "bludgeoning",
+                "weight": 2
+            },
+            "actions": [
+                "flail_attack"
+            ]
+        },
+        {
+            "name": "Glaive",
+            "props": {
+                "damage": "1d10",
+                "damage_type": "slashing",
+                "weight": 6,
+                "properties": "heavy, reach, two-handed"
+            },
+            "actions": [
+                "glaive_attack"
+            ]
+        },
+        {
+            "name": "Greataxe",
+            "props": {
+                "damage": "1d12",
+                "damage_type": "slashing",
+                "weight": 7,
+                "properties": "heavy, two-handed"
+            },
+            "actions": [
+                "greataxe_attack"
+            ]
+        },
+        {
+            "name": "Greatsword",
+            "props": {
+                "damage": "2d6",
+                "damage_type": "slashing",
+                "weight": 6,
+                "properties": "heavy, two-handed"
+            },
+            "actions": [
+                "greatsword_attack"
+            ]
+        },
+        {
+            "name": "Halberd",
+            "props": {
+                "damage": "1d10",
+                "damage_type": "slashing",
+                "weight": 6,
+                "properties": "heavy, reach, two-handed"
+            },
+            "actions": [
+                "halberd_attack"
+            ]
+        },
+        {
+            "name": "Lance",
+            "props": {
+                "damage": "1d12",
+                "damage_type": "piercing",
+                "weight": 6,
+                "properties": "reach, special"
+            },
+            "actions": [
+                "lance_attack"
+            ]
+        },
+        {
+            "name": "Longsword",
+            "props": {
+                "damage": "1d8",
+                "damage_type": "slashing",
+                "weight": 3,
+                "properties": "versatile (1d10)"
+            },
+            "actions": [
+                "longsword_attack"
+            ]
+        },
+        {
+            "name": "Maul",
+            "props": {
+                "damage": "2d6",
+                "damage_type": "bludgeoning",
+                "weight": 10,
+                "properties": "heavy, two-handed"
+            },
+            "actions": [
+                "maul_attack"
+            ]
+        },
+        {
+            "name": "Morningstar",
+            "props": {
+                "damage": "1d8",
+                "damage_type": "piercing",
+                "weight": 4
+            },
+            "actions": [
+                "morningstar_attack"
+            ]
+        },
+        {
+            "name": "Pike",
+            "props": {
+                "damage": "1d10",
+                "damage_type": "piercing",
+                "weight": 18,
+                "properties": "heavy, reach, two-handed"
+            },
+            "actions": [
+                "pike_attack"
+            ]
+        },
+        {
+            "name": "Rapier",
+            "props": {
+                "damage": "1d8",
+                "damage_type": "piercing",
+                "weight": 2,
+                "properties": "finesse"
+            },
+            "actions": [
+                "rapier_attack"
+            ]
+        },
+        {
+            "name": "Scimitar",
+            "props": {
+                "damage": "1d6",
+                "damage_type": "slashing",
+                "weight": 3,
+                "properties": "finesse, light"
+            },
+            "actions": [
+                "scimitar_attack"
+            ]
+        },
+        {
+            "name": "Shortsword",
+            "props": {
+                "damage": "1d6",
+                "damage_type": "piercing",
+                "weight": 2,
+                "properties": "finesse, light"
+            },
+            "actions": [
+                "shortsword_attack"
+            ]
+        },
+        {
+            "name": "Trident",
+            "props": {
+                "damage": "1d6",
+                "damage_type": "piercing",
+                "weight": 4,
+                "properties": "thrown (range 20/60), versatile (1d8)"
+            },
+            "actions": [
+                "trident_attack"
+            ]
+        },
+        {
+            "name": "War Pick",
+            "props": {
+                "damage": "1d8",
+                "damage_type": "piercing",
+                "weight": 2
+            },
+            "actions": [
+                "war_pick_attack"
+            ]
+        },
+        {
+            "name": "Warhammer",
+            "props": {
+                "damage": "1d8",
+                "damage_type": "bludgeoning",
+                "weight": 2,
+                "properties": "versatile (1d10)"
+            },
+            "actions": [
+                "warhammer_attack"
+            ]
+        },
+        {
+            "name": "Whip",
+            "props": {
+                "damage": "1d4",
+                "damage_type": "slashing",
+                "weight": 3,
+                "properties": "finesse, reach"
+            },
+            "actions": [
+                "whip_attack"
+            ]
+        },
+        {
+            "name": "Blowgun",
+            "props": {
+                "damage": "1",
+                "damage_type": "piercing",
+                "weight": 1,
+                "properties": "ammunition (range 25/100), loading"
+            },
+            "actions": [
+                "blowgun_attack"
+            ]
+        },
+        {
+            "name": "Crossbow, hand",
+            "props": {
+                "damage": "1d6",
+                "damage_type": "piercing",
+                "weight": 3,
+                "properties": "ammunition (range 30/120), light, loading"
+            },
+            "actions": [
+                "crossbow_hand_attack"
+            ]
+        },
+        {
+            "name": "Crossbow, heavy",
+            "props": {
+                "damage": "1d10",
+                "damage_type": "piercing",
+                "weight": 18,
+                "properties": "ammunition (range 100/400), heavy, loading, two-handed"
+            },
+            "actions": [
+                "crossbow_heavy_attack"
+            ]
+        },
+        {
+            "name": "Longbow",
+            "props": {
+                "damage": "1d8",
+                "damage_type": "piercing",
+                "weight": 2,
+                "properties": "ammunition (range 150/600), heavy, two-handed"
+            },
+            "actions": [
+                "longbow_attack"
+            ]
+        },
+        {
+            "name": "Net",
+            "props": {
+                "damage": "0",
+                "damage_type": "none",
+                "weight": 3,
+                "properties": "special, thrown (range 5/15)"
+            },
+            "actions": [
+                "net_attack"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "greataxe_attack",
+            "name": "Greataxe Attack",
+            "icon": "https://cdn-icons-png.flaticon.com/512/771/771255.png",
+            "script": [
+                [
+                    "Take action",
+                    "Character.consume(\"action\")"
+                ],
+                [
+                    "Hit",
+                    "Dice.roll(\"d20\") + Character.getProp(\"hit_bonus\")",
+                    "advantage"
+                ],
+                [
+                    "Damage",
+                    "Dice.roll(\"d12\") + Character.getProp(\"damage_bonus\")",
+                    [
+                        "critical",
+                        "damage"
+                    ]
+                ]
+            ]
+        }
+    ]
+}

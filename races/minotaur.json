@@ -23,7 +23,7 @@
                 ],
                 [
                     "Hit",
-                    "Dice.roll(\"d20\") + Character.getProp(\"proficiency\") + Character.getProp(\"strength_modifier\")",
+                    "Dice.roll(\"d20\") + Character.getProp(\"hit_bonus\")",
                     "advantage"
                 ],
                 [

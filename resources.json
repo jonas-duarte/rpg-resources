@@ -14,7 +14,7 @@
     {
         "origin": "https://raw.githubusercontent.com/jonas-duarte/rpg-resources/main/items",
         "paths": [
-            "/greataxe.json"
+            "/weapons.json"
         ]
     }
 ]

@@ -24,6 +24,7 @@
                     "type": "script",
                     "value": "[2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4][Character.level]"
                 },
+                "hit_bonus": "Character.getProp(\"strength_modifier\") + Character.getProp(\"proficiency_bonus\")",
                 "damage_bonus": "Character.getProp(\"strength_modifier\") + Character.getPropIfActive(\"barbarian_rage_damage\", \"barbarian_is_raging\", 0)"
             },
             "actions": [
