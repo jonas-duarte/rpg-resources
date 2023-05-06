@@ -1,7 +1,6 @@
 {
     "items": [
         {
-            "id": "weapon_club",
             "name": "Club",
             "props": {
                 "damage": "1d4",
@@ -10,11 +9,10 @@
                 "properties": "light"
             },
             "actions": [
-                "club_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_dagger",
             "name": "Dagger",
             "props": {
                 "damage": "1d4",
@@ -23,11 +21,10 @@
                 "properties": "finesse, light, thrown (range 20/60)"
             },
             "actions": [
-                "dagger_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_greatclub",
             "name": "Greatclub",
             "props": {
                 "damage": "1d8",
@@ -36,11 +33,10 @@
                 "properties": "two-handed"
             },
             "actions": [
-                "greatclub_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_handaxe",
             "name": "Handaxe",
             "props": {
                 "damage": "1d6",
@@ -49,11 +45,10 @@
                 "properties": "light, thrown (range 20/60)"
             },
             "actions": [
-                "handaxe_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_javelin",
             "name": "Javelin",
             "props": {
                 "damage": "1d6",
@@ -62,11 +57,10 @@
                 "properties": "thrown (range 30/120)"
             },
             "actions": [
-                "javelin_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_light_hammer",
             "name": "Light hammer",
             "props": {
                 "damage": "1d4",
@@ -75,11 +69,10 @@
                 "properties": "light, thrown (range 20/60)"
             },
             "actions": [
-                "light_hammer_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_mace",
             "name": "Mace",
             "props": {
                 "damage": "1d6",
@@ -87,11 +80,10 @@
                 "weight": 4
             },
             "actions": [
-                "mace_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_quarterstaff",
             "name": "Quarterstaff",
             "props": {
                 "damage": "1d6",
@@ -100,11 +92,10 @@
                 "properties": "versatile (1d8)"
             },
             "actions": [
-                "quarterstaff_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_sickle",
             "name": "Sickle",
             "props": {
                 "damage": "1d4",
@@ -113,11 +104,10 @@
                 "properties": "light"
             },
             "actions": [
-                "sickle_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_spear",
             "name": "Spear",
             "props": {
                 "damage": "1d6",
@@ -126,11 +116,10 @@
                 "properties": "thrown (range 20/60), versatile (1d8)"
             },
             "actions": [
-                "spear_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_light_crossbow",
             "name": "Light crossbow",
             "props": {
                 "damage": "1d8",
@@ -139,11 +128,10 @@
                 "properties": "ammunition (range 80/320), loading, two-handed"
             },
             "actions": [
-                "light_crossbow_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_dart",
             "name": "Dart",
             "props": {
                 "damage": "1d4",
@@ -152,11 +140,10 @@
                 "properties": "finesse, thrown (range 20/60)"
             },
             "actions": [
-                "dart_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_shortbow",
             "name": "Shortbow",
             "props": {
                 "damage": "1d6",
@@ -165,11 +152,10 @@
                 "properties": "ammunition (range 80/320), two-handed"
             },
             "actions": [
-                "shortbow_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_sling",
             "name": "Sling",
             "props": {
                 "damage": "1d4",
@@ -178,11 +164,10 @@
                 "properties": "ammunition (range 30/120)"
             },
             "actions": [
-                "sling_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_battleaxe",
             "name": "Battleaxe",
             "props": {
                 "damage": "1d8",
@@ -191,11 +176,10 @@
                 "properties": "versatile (1d10)"
             },
             "actions": [
-                "battleaxe_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_flail",
             "name": "Flail",
             "props": {
                 "damage": "1d8",
@@ -203,11 +187,10 @@
                 "weight": 2
             },
             "actions": [
-                "flail_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_glaive",
             "name": "Glaive",
             "props": {
                 "damage": "1d10",
@@ -216,11 +199,10 @@
                 "properties": "heavy, reach, two-handed"
             },
             "actions": [
-                "glaive_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_greataxe",
             "name": "Greataxe",
             "props": {
                 "damage": "1d12",
@@ -229,11 +211,10 @@
                 "properties": "heavy, two-handed"
             },
             "actions": [
-                "greataxe_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_greatsword",
             "name": "Greatsword",
             "props": {
                 "damage": "2d6",
@@ -242,11 +223,10 @@
                 "properties": "heavy, two-handed"
             },
             "actions": [
-                "greatsword_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_halberd",
             "name": "Halberd",
             "props": {
                 "damage": "1d10",
@@ -255,11 +235,10 @@
                 "properties": "heavy, reach, two-handed"
             },
             "actions": [
-                "halberd_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_lance",
             "name": "Lance",
             "props": {
                 "damage": "1d12",
@@ -268,11 +247,10 @@
                 "properties": "reach, special"
             },
             "actions": [
-                "lance_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_longsword",
             "name": "Longsword",
             "props": {
                 "damage": "1d8",
@@ -281,11 +259,10 @@
                 "properties": "versatile (1d10)"
             },
             "actions": [
-                "longsword_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_maul",
             "name": "Maul",
             "props": {
                 "damage": "2d6",
@@ -294,11 +271,10 @@
                 "properties": "heavy, two-handed"
             },
             "actions": [
-                "maul_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_morningstar",
             "name": "Morningstar",
             "props": {
                 "damage": "1d8",
@@ -306,11 +282,10 @@
                 "weight": 4
             },
             "actions": [
-                "morningstar_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_pike",
             "name": "Pike",
             "props": {
                 "damage": "1d10",
@@ -319,11 +294,10 @@
                 "properties": "heavy, reach, two-handed"
             },
             "actions": [
-                "pike_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_rapier",
             "name": "Rapier",
             "props": {
                 "damage": "1d8",
@@ -332,11 +306,10 @@
                 "properties": "finesse"
             },
             "actions": [
-                "rapier_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_scimitar",
             "name": "Scimitar",
             "props": {
                 "damage": "1d6",
@@ -345,11 +318,10 @@
                 "properties": "finesse, light"
             },
             "actions": [
-                "scimitar_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_shortsword",
             "name": "Shortsword",
             "props": {
                 "damage": "1d6",
@@ -358,11 +330,10 @@
                 "properties": "finesse, light"
             },
             "actions": [
-                "shortsword_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_trident",
             "name": "Trident",
             "props": {
                 "damage": "1d6",
@@ -371,11 +342,10 @@
                 "properties": "thrown (range 20/60), versatile (1d8)"
             },
             "actions": [
-                "trident_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_war_pick",
             "name": "War Pick",
             "props": {
                 "damage": "1d8",
@@ -383,11 +353,10 @@
                 "weight": 2
             },
             "actions": [
-                "war_pick_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_warhammer",
             "name": "Warhammer",
             "props": {
                 "damage": "1d8",
@@ -396,11 +365,10 @@
                 "properties": "versatile (1d10)"
             },
             "actions": [
-                "warhammer_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_whip",
             "name": "Whip",
             "props": {
                 "damage": "1d4",
@@ -409,11 +377,10 @@
                 "properties": "finesse, reach"
             },
             "actions": [
-                "whip_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_blowgun",
             "name": "Blowgun",
             "props": {
                 "damage": "1",
@@ -422,11 +389,10 @@
                 "properties": "ammunition (range 25/100), loading"
             },
             "actions": [
-                "blowgun_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_crossbow_hand",
             "name": "Crossbow, hand",
             "props": {
                 "damage": "1d6",
@@ -435,11 +401,10 @@
                 "properties": "ammunition (range 30/120), light, loading"
             },
             "actions": [
-                "crossbow_hand_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_crossbow_heavy",
             "name": "Crossbow, heavy",
             "props": {
                 "damage": "1d10",
@@ -448,11 +413,10 @@
                 "properties": "ammunition (range 100/400), heavy, loading, two-handed"
             },
             "actions": [
-                "crossbow_heavy_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_longbow",
             "name": "Longbow",
             "props": {
                 "damage": "1d8",
@@ -461,11 +425,10 @@
                 "properties": "ammunition (range 150/600), heavy, two-handed"
             },
             "actions": [
-                "longbow_attack"
+                "weapon_attack"
             ]
         },
         {
-            "id": "weapon_net",
             "name": "Net",
             "props": {
                 "damage": "0",
@@ -474,14 +437,13 @@
                 "properties": "special, thrown (range 5/15)"
             },
             "actions": [
-                "net_attack"
+                "weapon_attack"
             ]
         }
     ],
     "actions": [
         {   
-            "useTagsReplacement": true,
-            "id": "{id}_attack",
+            "id": "weapon_attack",
             "name": "{name} Attack",
             "icon": "https://cdn-icons-png.flaticon.com/512/771/771255.png",
             "script": [
