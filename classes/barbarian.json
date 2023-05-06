@@ -7,7 +7,7 @@
                 "hit_dice": "1d12",
                 "proficiency_bonus": {
                     "type": "script",
-                    "script": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
                 },
                 "strength_save_proficiency": true,
                 "dexterity_save_proficiency": false,
@@ -18,11 +18,11 @@
                 "barbarian_rage": 2,
                 "barbarian_rage_max": {
                     "type": "script",
-                    "script": "[2,2,3,3,3,4,4,4,4,4,4,5,5,5,5,5,6,6,6,999][Character.level]"
+                    "value": "[2,2,3,3,3,4,4,4,4,4,4,5,5,5,5,5,6,6,6,999][Character.level]"
                 },
                 "barbarian_rage_damage": {
                     "type": "script",
-                    "script": "[2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4][Character.level]"
+                    "value": "[2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4][Character.level]"
                 },
                 "damage_bonus": "Character.getProp(\"strength_modifier\") + Character.getPropIfActive(\"barbarian_rage_damage\", \"barbarian_is_raging\", 0)"
             },
