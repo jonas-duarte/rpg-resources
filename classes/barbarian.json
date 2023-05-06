@@ -1,0 +1,58 @@
+{
+    "classes": [
+        {
+            "name": "Barbarian",
+            "props": {
+                "class": "Barbarian",
+                "hit_dice": "1d12",
+                "proficiency_bonus": {
+                    "type": "script",
+                    "script": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                },
+                "strength_save_proficiency": true,
+                "dexterity_save_proficiency": false,
+                "constitution_save_proficiency": true,
+                "intelligence_save_proficiency": false,
+                "wisdom_save_proficiency": false,
+                "charisma_save_proficiency": false,
+                "barbarian_rage": 2,
+                "barbarian_rage_max": {
+                    "type": "script",
+                    "script": "[2,2,3,3,3,4,4,4,4,4,4,5,5,5,5,5,6,6,6,999][Character.level]"
+                },
+                "barbarian_rage_damage": {
+                    "type": "script",
+                    "script": "[2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4][Character.level]"
+                },
+                "damage_bonus": "Character.getProp(\"strength_modifier\") + Character.getPropIfActive(\"barbarian_rage_damage\", \"barbarian_is_raging\", 0)"
+            },
+            "actions": [
+                "barbarian_rage",
+                "barbarian_wild_magic_rage"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "barbarian_rage",
+            "name": "Barbarian Rage",
+            "icon": "https://cdn-icons-png.flaticon.com/512/1791/1791456.png",
+            "script": [
+                ["Take bonus action", "Character.consume(\"bonus_action\")"],
+                ["Consume resource", "Character.consume(\"barbarian_rage\")"],
+                ["Activate Rage", "Character.activate(\"barbarian_is_raging\")"]
+            ]
+        },
+        {
+            "id": "barbarian_wild_magic_rage",
+            "name": "Barbarian Wild Magic Rage",
+            "icon": "https://cdn-icons-png.flaticon.com/512/1791/1791456.png",
+            "script": [
+                ["Take bonus action", "Character.consume(\"bonus_action\")"],
+                ["Consume resource", "Character.consume(\"barbarian_rage\")"],
+                ["Activate Rage", "Character.activate(\"barbarian_is_raging\")"],
+                ["Wild Magic Surge", "Dice.roll(\"d8\")"]
+            ]
+        }
+    ]
+}
