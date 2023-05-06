@@ -444,7 +444,7 @@
     "actions": [
         {   
             "id": "weapon_attack",
-            "name": "{name} Attack",
+            "name": "{@name} Attack",
             "icon": "https://cdn-icons-png.flaticon.com/512/771/771255.png",
             "script": [
                 [
@@ -457,8 +457,8 @@
                     "advantage"
                 ],
                 [
-                    "Damage {damage_type}",
-                    "Dice.roll(\"{damage}\") + Character.getProp(\"damage_bonus\")",
+                    "Damage {@damage_type}",
+                    "Dice.roll(\"{@damage}\") + Character.getProp(\"damage_bonus\")",
                     [
                         "critical",
                         "damage"
