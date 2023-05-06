@@ -92,7 +92,8 @@
                 "properties": "versatile (1d8)"
             },
             "actions": [
-                "weapon_attack"
+                "weapon_attack",
+                "weapon_attack_versatile_1d8"
             ]
         },
         {
@@ -116,7 +117,8 @@
                 "properties": "thrown (range 20/60), versatile (1d8)"
             },
             "actions": [
-                "weapon_attack"
+                "weapon_attack",
+                "weapon_attack_versatile_1d8"
             ]
         },
         {
@@ -176,7 +178,8 @@
                 "properties": "versatile (1d10)"
             },
             "actions": [
-                "weapon_attack"
+                "weapon_attack",
+                "weapon_attack_versatile_1d10"
             ]
         },
         {
@@ -259,7 +262,8 @@
                 "properties": "versatile (1d10)"
             },
             "actions": [
-                "weapon_attack"
+                "weapon_attack",
+                "weapon_attack_versatile_1d10"
             ]
         },
         {
@@ -342,7 +346,8 @@
                 "properties": "thrown (range 20/60), versatile (1d8)"
             },
             "actions": [
-                "weapon_attack"
+                "weapon_attack",
+                "weapon_attack_versatile_1d8"
             ]
         },
         {
@@ -365,7 +370,8 @@
                 "properties": "versatile (1d10)"
             },
             "actions": [
-                "weapon_attack"
+                "weapon_attack",
+                "weapon_attack_versatile_1d10"
             ]
         },
         {
@@ -459,6 +465,54 @@
                 [
                     "Damage {@damage_type}",
                     "Dice.roll(\"{@damage}\") + Character.getProp(\"damage_bonus\")",
+                    [
+                        "critical",
+                        "damage"
+                    ]
+                ]
+            ]
+        },
+        {   
+            "id": "weapon_attack_versatile_1d8",
+            "name": "{@name} Attack (Versatile 1d8)",
+            "icon": "https://cdn-icons-png.flaticon.com/512/771/771255.png",
+            "script": [
+                [
+                    "Take action",
+                    "Character.consume(\"action\")"
+                ],
+                [
+                    "Hit",
+                    "Dice.roll(\"d20\") + Character.getProp(\"hit_bonus\")",
+                    "advantage"
+                ],
+                [
+                    "Damage {@damage_type}",
+                    "Dice.roll(\"1d8\") + Character.getProp(\"damage_bonus\")",
+                    [
+                        "critical",
+                        "damage"
+                    ]
+                ]
+            ]
+        },
+        {   
+            "id": "weapon_attack_versatile_1d10",
+            "name": "{@name} Attack (Versatile 1d10)",
+            "icon": "https://cdn-icons-png.flaticon.com/512/771/771255.png",
+            "script": [
+                [
+                    "Take action",
+                    "Character.consume(\"action\")"
+                ],
+                [
+                    "Hit",
+                    "Dice.roll(\"d20\") + Character.getProp(\"hit_bonus\")",
+                    "advantage"
+                ],
+                [
+                    "Damage {@damage_type}",
+                    "Dice.roll(\"1d10\") + Character.getProp(\"damage_bonus\")",
                     [
                         "critical",
                         "damage"
