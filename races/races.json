@@ -4,8 +4,8 @@
             "name": "Aarakocra",
             "props": {
                 "size": "M",
-                "speed": 30,
-                "fly_speed": true
+                "speed": 20,
+                "fly_speed": 50
             }
         },
         {
@@ -133,7 +133,7 @@
             "props": {
                 "size": "S",
                 "speed": 30,
-                "fly_speed": true
+                "fly_speed": 30
             }
         },
         {
@@ -146,7 +146,7 @@
         {
             "name": "Genasi",
             "props": {
-                "size": "S,M",
+                "size": "M",
                 "speed": 30
             }
         },
@@ -196,14 +196,14 @@
             "name": "Gnome",
             "props": {
                 "size": "S",
-                "speed": 20
+                "speed": 25
             }
         },
         {
             "name": "Goblin",
             "props": {
                 "size": "S",
-                "speed": 25
+                "speed": 30
             }
         },
         {
@@ -364,7 +364,7 @@
             "name": "Merfolk",
             "props": {
                 "size": "M",
-                "speed": 30
+                "speed": 10
             }
         },
         {
@@ -404,7 +404,7 @@
             "props": {
                 "size": "S,M",
                 "speed": 30,
-                "fly_speed": true
+                "fly_speed": 30
             }
         },
         {
@@ -481,7 +481,7 @@
         {
             "name": "Tabaxi",
             "props": {
-                "size": "M",
+                "size": "S,M",
                 "speed": 30
             }
         },
@@ -502,7 +502,7 @@
         {
             "name": "Tortle",
             "props": {
-                "size": "M",
+                "size": "S,M",
                 "speed": 30
             }
         },
