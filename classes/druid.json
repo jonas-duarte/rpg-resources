@@ -7,7 +7,7 @@
                 "hit_dice": "1d8",
                 "proficiency_bonus": {
                     "type": "script",
-                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.getProp(\"level\")]"
                 },
                 "strength_save_proficiency": false,
                 "dexterity_save_proficiency": false,
@@ -18,19 +18,19 @@
                 "spellcasting_ability": "Wisdom",
                 "spell_slots": {
                     "type": "script",
-                    "value": "[2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0][Character.level]"
+                    "value": "[2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0][Character.getProp(\"level\")]"
                 },
                 "cantrips_known": {
                     "type": "script",
-                    "value": "[2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5][Character.level]"
+                    "value": "[2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5][Character.getProp(\"level\")]"
                 },
                 "spells_known": {
                     "type": "script",
-                    "value": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0][Character.level]"
+                    "value": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0][Character.getProp(\"level\")]"
                 },
                 "wild_shape": {
                     "type": "script",
-                    "value": "Math.floor((Character.level + 2) / 3)"
+                    "value": "Math.floor((Character.getProp(\"level\") + 2) / 3)"
                 },
                 "hit_bonus": "Character.getProp(\"wisdom_modifier\") + Character.getProp(\"proficiency_bonus\")",
                 "damage_bonus": "Character.getProp(\"wisdom_modifier\")"

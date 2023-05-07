@@ -7,7 +7,7 @@
                 "hit_dice": "1d10",
                 "proficiency_bonus": {
                     "type": "script",
-                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.getProp(\"level\")]"
                 },
                 "strength_save_proficiency": true,
                 "dexterity_save_proficiency": false,
@@ -18,7 +18,7 @@
                 "spellcasting_ability": "Charisma",
                 "spell_slots": {
                     "type": "script",
-                    "value": "[0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,2][Character.level]"
+                    "value": "[0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,2][Character.getProp(\"level\")]"
                 },
                 "lay_on_hands": {
                     "type": "script",

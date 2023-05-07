@@ -7,7 +7,7 @@
                 "hit_dice": "1d8",
                 "proficiency_bonus": {
                     "type": "script",
-                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.getProp(\"level\")]"
                 },
                 "strength_save_proficiency": false,
                 "dexterity_save_proficiency": true,
@@ -17,7 +17,7 @@
                 "charisma_save_proficiency": false,
                 "sneak_attack": {
                     "type": "script",
-                    "value": "[0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4][Character.level]"
+                    "value": "[0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4][Character.getProp(\"level\")]"
                 },
                 "hit_bonus": "Character.getProp(\"dexterity_modifier\") + Character.getProp(\"proficiency_bonus\")",
                 "damage_bonus": "Character.getProp(\"dexterity_modifier\") + Character.getPropIfActive(\"sneak_attack\", \"has_sneak_attack\", 0)"
