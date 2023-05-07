@@ -1,0 +1,104 @@
+{
+    "classes": [
+        {
+            "name": "Sorcerer",
+            "props": {
+                "class": "Sorcerer",
+                "hit_dice": "1d6",
+                "proficiency_bonus": {
+                    "type": "script",
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                },
+                "strength_save_proficiency": false,
+                "dexterity_save_proficiency": false,
+                "constitution_save_proficiency": false,
+                "intelligence_save_proficiency": false,
+                "wisdom_save_proficiency": false,
+                "charisma_save_proficiency": true,
+                "spellcasting_ability": "Charisma",
+                "spell_slots": {
+                    "type": "script",
+                    "value": "[0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,4][Character.level]"
+                },
+                "sorcery_points": {
+                    "type": "script",
+                    "value": "[0,0,0,0,0,0,0,0,0,0,2,2,3,3,4,4,5,5,6,6][Character.level]"
+                },
+                "hit_bonus": "Character.getProp(\"charisma_modifier\") + Character.getProp(\"proficiency_bonus\")",
+                "damage_bonus": "Character.getProp(\"charisma_modifier\")"
+            },
+            "actions": [
+                "sorcery_points",
+                "metamagic",
+                "spellcasting"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "sorcery_points",
+            "name": "Sorcery Points",
+            "icon": "https://cdn-icons-png.flaticon.com/512/1484/1484711.png",
+            "script": [
+                [
+                    "Take action",
+                    "Character.consume(\"action\")"
+                ],
+                [
+                    "Convert",
+                    "Choose.fromList([\"Spell slot to sorcery points\", \"Sorcery points to spell slot\"])"
+                ],
+                [
+                    "Convert amount",
+                    "Dice.roll(\"1d4\")"
+                ],
+                [
+                    "Modify resource",
+                    "Character.modifyIfActive(\"sorcery_points\", \"has_sorcery_points\", Choose.fromList([\"+\", \"-\"]) + Dice.result)"
+                ],
+                [
+                    "Modify resource",
+                    "Character.modifyIfActive(\"spell_slots\", \"has_spell_slots\", Choose.fromList([\"-\", \"+\"]) + Dice.result)"
+                ]
+            ]
+        },
+        {
+            "id": "metamagic",
+            "name": "Metamagic",
+            "icon": "https://cdn-icons-png.flaticon.com/512/2454/2454744.png",
+            "script": [
+                [
+                    "Take bonus action",
+                    "Character.consume(\"bonus_action\")"
+                ],
+                [
+                    "Choose metamagic",
+                    "Choose.fromList(Character.getProp(\"metamagic_choices\"))"
+                ]
+            ]
+        },
+        {
+            "id": "spellcasting",
+            "name": "Spellcasting",
+            "icon": "https://cdn-icons-png.flaticon.com/512/983/983823.png",
+            "script": [
+                [
+                    "Take action",
+                    "Character.consume(\"action\")"
+                ],
+                [
+                    "Consume spell slot",
+                    "Character.consumeIfActive(\"spell_slots\", \"spellcasted\")"
+                ],
+                [
+                    "Select spell",
+                    "Choose.fromList(Character.getProp(\"spell_list\"))"
+                ],
+                [
+                    "Consume spell slot",
+                    "Character.consumeIfActive(\"spell_slots\", \"spellcasted\")"
+                ]
+            ]
+        }
+    ]
+}

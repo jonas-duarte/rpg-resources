@@ -1,0 +1,72 @@
+{
+    "classes": [
+        {
+            "name": "Warlock",
+            "props": {
+                "class": "Warlock",
+                "hit_dice": "1d8",
+                "proficiency_bonus": {
+                    "type": "script",
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                },
+                "strength_save_proficiency": false,
+                "dexterity_save_proficiency": false,
+                "constitution_save_proficiency": false,
+                "intelligence_save_proficiency": false,
+                "wisdom_save_proficiency": false,
+                "charisma_save_proficiency": true,
+                "spellcasting_ability": "Charisma",
+                "spell_slots": {
+                    "type": "script",
+                    "value": "[0,0,0,0,0,0,0,0,0,0,1,1,2,2,2,2,2,2,2,2][Character.level]"
+                },
+                "invocations_known": {
+                    "type": "script",
+                    "value": "[0,0,0,0,0,0,0,0,0,0,2,2,2,3,3,3,4,4,4,4][Character.level]"
+                },
+                "hit_bonus": "Character.getProp(\"charisma_modifier\") + Character.getProp(\"proficiency_bonus\")",
+                "damage_bonus": "Character.getProp(\"charisma_modifier\")"
+            },
+            "actions": [
+                "invocations",
+                "spellcasting"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "invocations",
+            "name": "Invocations",
+            "icon": "https://cdn-icons-png.flaticon.com/512/1071/1071218.png",
+            "script": [
+                [
+                    "Take action",
+                    "Character.consume(\"action\")"
+                ],
+                [
+                    "Select invocation",
+                    "Choose.fromList(Character.getProp(\"invocation_list\"))"
+                ]
+            ]
+        },
+        {
+            "id": "spellcasting",
+            "name": "Spellcasting",
+            "icon": "https://cdn-icons-png.flaticon.com/512/983/983823.png",
+            "script": [
+                [
+                    "Take action",
+                    "Character.consume(\"action\")"
+                ],
+                [
+                    "Consume spell slot",
+                    "Character.consumeIfActive(\"spell_slots\", \"spellcasted\")"
+                ],
+                [
+                    "Select spell",
+                    "Choose.fromList(Character.getProp(\"spell_list\"))"
+                ]
+            ]
+        }
+    ]
+}

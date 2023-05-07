@@ -1,0 +1,66 @@
+{
+    "classes": [
+        {
+            "name": "Druid",
+            "props": {
+                "class": "Druid",
+                "hit_dice": "1d8",
+                "proficiency_bonus": {
+                    "type": "script",
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                },
+                "strength_save_proficiency": false,
+                "dexterity_save_proficiency": false,
+                "constitution_save_proficiency": true,
+                "intelligence_save_proficiency": false,
+                "wisdom_save_proficiency": true,
+                "charisma_save_proficiency": false,
+                "spellcasting_ability": "Wisdom",
+                "spell_slots": {
+                    "type": "script",
+                    "value": "[2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0][Character.level]"
+                },
+                "cantrips_known": {
+                    "type": "script",
+                    "value": "[2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5][Character.level]"
+                },
+                "spells_known": {
+                    "type": "script",
+                    "value": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0][Character.level]"
+                },
+                "wild_shape": {
+                    "type": "script",
+                    "value": "Math.floor((Character.level + 2) / 3)"
+                },
+                "hit_bonus": "Character.getProp(\"wisdom_modifier\") + Character.getProp(\"proficiency_bonus\")",
+                "damage_bonus": "Character.getProp(\"wisdom_modifier\")"
+            },
+            "actions": [
+                "wild_shape",
+                "spellcasting"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "wild_shape",
+            "name": "Wild Shape",
+            "icon": "https://cdn-icons-png.flaticon.com/512/2903/2903567.png",
+            "script": [
+                ["Take action", "Character.consume(\"action\")"],
+                ["Consume resource", "Character.consumeIfActive(\"wild_shape\", \"can_wild_shape\")"],
+                ["Transform into an animal", "Character.activate(\"wild_shape_used\")"]
+            ]
+        },
+        {
+            "id": "spellcasting",
+            "name": "Spellcasting",
+            "icon": "https://cdn-icons-png.flaticon.com/512/983/983823.png",
+            "script": [
+                ["Take action", "Character.consume(\"action\")"],
+                ["Consume spell slot", "Character.consumeIfActive(\"spell_slots\", \"spellcasted\")"],
+                ["Cast spell", "Spell.select(\"druid_spells\")"]
+            ]
+        }
+    ]
+}

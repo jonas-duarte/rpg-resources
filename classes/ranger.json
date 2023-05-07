@@ -1,0 +1,61 @@
+{
+    "classes": [
+        {
+            "name": "Ranger",
+            "props": {
+                "class": "Ranger",
+                "hit_dice": "1d10",
+                "proficiency_bonus": {
+                    "type": "script",
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                },
+                "strength_save_proficiency": false,
+                "dexterity_save_proficiency": true,
+                "constitution_save_proficiency": false,
+                "intelligence_save_proficiency": false,
+                "wisdom_save_proficiency": true,
+                "charisma_save_proficiency": false,
+                "favored_enemy": {
+                    "type": "list",
+                    "options": ["Beasts", "Dragons", "Fey", "Giants", "Monstrosities", "Undead"],
+                    "value": "Choose.one()",
+                    "description": "Select a type of creature as your favored enemy, gaining +2 bonus to damage rolls against them"
+                },
+                "natural_explorer": {
+                    "type": "list",
+                    "options": ["Arctic", "Coast", "Desert", "Forest", "Grassland", "Mountain", "Swamp", "Underdark"],
+                    "value": "Choose.one()",
+                    "description": "Select a type of terrain to gain bonuses to travel and foraging"
+                },
+                "hit_bonus": "Character.getProp(\"dexterity_modifier\") + Character.getProp(\"proficiency_bonus\")",
+                "damage_bonus": "Character.getProp(\"dexterity_modifier\")"
+            },
+            "actions": [
+                "hunter_s_mark",
+                "primeval_awareness"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "hunter_s_mark",
+            "name": "Hunter's Mark",
+            "icon": "https://cdn-icons-png.flaticon.com/512/3109/3109549.png",
+            "script": [
+                ["Take bonus action", "Character.consume(\"bonus_action\")"],
+                ["Consume spell slot", "Character.consumeIfActive(\"spell_slots\", \"spellcasted\")"],
+                ["Activate", "Character.activate(\"ranger_hunters_mark\")"]
+            ]
+        },
+        {
+            "id": "primeval_awareness",
+            "name": "Primeval Awareness",
+            "icon": "https://cdn-icons-png.flaticon.com/512/166/166257.png",
+            "script": [
+                ["Take action", "Character.consume(\"action\")"],
+                ["Consume spell slot", "Character.consumeIfActive(\"spell_slots\", \"spellcasted\")"],
+                ["Detect creatures", "Choose.fromList(Character.getProp(\"natural_explorer\"))"]
+            ]
+        }
+    ]
+}

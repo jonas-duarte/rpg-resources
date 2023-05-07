@@ -2,7 +2,18 @@
     {
         "origin": "https://raw.githubusercontent.com/jonas-duarte/rpg-resources/main/classes",
         "paths": [
-            "/barbarian.json"
+            "/barbarian.json",
+            "/bard.json",
+            "/cleric.json",
+            "/druid.json",
+            "/fighter.json",
+            "/monk.json",
+            "/paladin.json",
+            "/ranger.json",
+            "/rogue.json",
+            "/sorcerer.json",
+            "/warlock.json",
+            "/wizard.json"
         ]
     },
     {

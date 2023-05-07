@@ -1,0 +1,62 @@
+{
+    "classes": [
+        {
+            "name": "Cleric",
+            "props": {
+                "class": "Cleric",
+                "hit_dice": "1d8",
+                "proficiency_bonus": {
+                    "type": "script",
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                },
+                "strength_save_proficiency": false,
+                "dexterity_save_proficiency": false,
+                "constitution_save_proficiency": false,
+                "intelligence_save_proficiency": false,
+                "wisdom_save_proficiency": true,
+                "charisma_save_proficiency": true,
+                "spellcasting_ability": "Wisdom",
+                "spell_slots": {
+                    "type": "script",
+                    "value": "[3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0][Character.level]"
+                },
+                "cantrips_known": {
+                    "type": "script",
+                    "value": "[3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5][Character.level]"
+                },
+                "spells_known": {
+                    "type": "script",
+                    "value": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0][Character.level]"
+                },
+                "hit_bonus": "Character.getProp(\"wisdom_modifier\") + Character.getProp(\"proficiency_bonus\")",
+                "damage_bonus": "Character.getProp(\"wisdom_modifier\")"
+            },
+            "actions": [
+                "healing_word",
+                "spellcasting"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "healing_word",
+            "name": "Healing Word",
+            "icon": "https://cdn-icons-png.flaticon.com/512/2820/2820343.png",
+            "script": [
+                ["Take bonus action", "Character.consume(\"bonus_action\")"],
+                ["Consume spell slot", "Character.consumeIfActive(\"spell_slots\", \"spellcasted\")"],
+                ["Heal", "Dice.roll(\"d4\") + Character.getProp(\"cleric_level\")"]
+            ]
+        },
+        {
+            "id": "spellcasting",
+            "name": "Spellcasting",
+            "icon": "https://cdn-icons-png.flaticon.com/512/983/983823.png",
+            "script": [
+                ["Take action", "Character.consume(\"action\")"],
+                ["Consume spell slot", "Character.consumeIfActive(\"spell_slots\", \"spellcasted\")"],
+                ["Cast spell", "Spell.select(\"cleric_spells\")"]
+            ]
+        }
+    ]
+}

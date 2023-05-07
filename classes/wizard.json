@@ -1,0 +1,72 @@
+{
+    "classes": [
+        {
+            "name": "Wizard",
+            "props": {
+                "class": "Wizard",
+                "hit_dice": "1d6",
+                "proficiency_bonus": {
+                    "type": "script",
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                },
+                "strength_save_proficiency": false,
+                "dexterity_save_proficiency": false,
+                "constitution_save_proficiency": false,
+                "intelligence_save_proficiency": true,
+                "wisdom_save_proficiency": false,
+                "charisma_save_proficiency": false,
+                "spellcasting_ability": "Intelligence",
+                "spell_slots": {
+                    "type": "script",
+                    "value": "[0,0,0,0,0,0,0,0,0,0,2,3,3,3,4,4,4,4,4,4][Character.level]"
+                },
+                "arcane_recovery": {
+                    "type": "script",
+                    "value": "max(1, Character.getProp(\"wizard_level\")//2)"
+                },
+                "hit_bonus": "Character.getProp(\"intelligence_modifier\") + Character.getProp(\"proficiency_bonus\")",
+                "damage_bonus": "Character.getProp(\"intelligence_modifier\")"
+            },
+            "actions": [
+                "arcane_recovery",
+                "spellcasting"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "arcane_recovery",
+            "name": "Arcane Recovery",
+            "icon": "https://cdn-icons-png.flaticon.com/512/3975/3975222.png",
+            "script": [
+                [
+                    "Take action",
+                    "Character.consume(\"action\")"
+                ],
+                [
+                    "Recover spell slots",
+                    "Character.modifyIfActive(\"spell_slots\", \"has_spell_slots\", \"+\" + Character.getProp(\"arcane_recovery\"))"
+                ]
+            ]
+        },
+        {
+            "id": "spellcasting",
+            "name": "Spellcasting",
+            "icon": "https://cdn-icons-png.flaticon.com/512/983/983823.png",
+            "script": [
+                [
+                    "Take action",
+                    "Character.consume(\"action\")"
+                ],
+                [
+                    "Consume spell slot",
+                    "Character.consumeIfActive(\"spell_slots\", \"spellcasted\")"
+                ],
+                [
+                    "Select spell",
+                    "Choose.fromList(Character.getProp(\"spell_list\"))"
+                ]
+            ]
+        }
+    ]
+}

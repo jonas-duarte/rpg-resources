@@ -1,0 +1,68 @@
+{
+    "classes": [
+        {
+            "name": "Monk",
+            "props": {
+                "class": "Monk",
+                "hit_dice": "1d8",
+                "proficiency_bonus": {
+                    "type": "script",
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                },
+                "strength_save_proficiency": false,
+                "dexterity_save_proficiency": true,
+                "constitution_save_proficiency": false,
+                "intelligence_save_proficiency": false,
+                "wisdom_save_proficiency": true,
+                "charisma_save_proficiency": false,
+                "unarmored_movement": {
+                    "type": "script",
+                    "value": "Math.floor((Character.level - 1) / 4) * 5"
+                },
+                "ki_points": {
+                    "type": "script",
+                    "value": "[0,0,0,0,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5][Character.level]"
+                },
+                "hit_bonus": "Character.getProp(\"dexterity_modifier\") + Character.getProp(\"proficiency_bonus\")",
+                "damage_bonus": "Character.getProp(\"dexterity_modifier\")"
+            },
+            "actions": [
+                "flurry_of_blows",
+                "patient_defense",
+                "step_of_the_wind"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "flurry_of_blows",
+            "name": "Flurry of Blows",
+            "icon": "https://cdn-icons-png.flaticon.com/512/2386/2386016.png",
+            "script": [
+                ["Take bonus action", "Character.consume(\"bonus_action\")"],
+                ["Consume resource", "Character.consumeIfActive(\"ki_points\", \"has_ki\")"],
+                ["Attack twice", "Dice.roll(\"2d4\")"]
+            ]
+        },
+        {
+            "id": "patient_defense",
+            "name": "Patient Defense",
+            "icon": "https://cdn-icons-png.flaticon.com/512/2386/2386020.png",
+            "script": [
+                ["Take bonus action", "Character.consume(\"bonus_action\")"],
+                ["Consume resource", "Character.consumeIfActive(\"ki_points\", \"has_ki\")"],
+                ["Dodge action", "Character.activate(\"monk_patient_defense\")"]
+            ]
+        },
+        {
+            "id": "step_of_the_wind",
+            "name": "Step of the Wind",
+            "icon": "https://cdn-icons-png.flaticon.com/512/2386/2386014.png",
+            "script": [
+                ["Take bonus action", "Character.consume(\"bonus_action\")"],
+                ["Consume resource", "Character.consumeIfActive(\"ki_points\", \"has_ki\")"],
+                ["Disengage or Dash action", "Character.activate(\"monk_step_of_the_wind\")"]
+            ]
+        }
+    ]
+}

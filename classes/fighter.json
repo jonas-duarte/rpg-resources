@@ -1,0 +1,51 @@
+{
+    "classes": [
+        {
+            "name": "Fighter",
+            "props": {
+                "class": "Fighter",
+                "hit_dice": "1d10",
+                "proficiency_bonus": {
+                    "type": "script",
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                },
+                "strength_save_proficiency": true,
+                "dexterity_save_proficiency": false,
+                "constitution_save_proficiency": false,
+                "intelligence_save_proficiency": false,
+                "wisdom_save_proficiency": false,
+                "charisma_save_proficiency": false,
+                "second_wind": 1,
+                "action_surge": 1,
+                "hit_bonus": "Character.getProp(\"strength_modifier\") + Character.getProp(\"proficiency_bonus\")",
+                "damage_bonus": "Character.getProp(\"strength_modifier\")"
+            },
+            "actions": [
+                "second_wind",
+                "action_surge"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "second_wind",
+            "name": "Second Wind",
+            "icon": "https://cdn-icons-png.flaticon.com/512/861/861261.png",
+            "script": [
+                ["Take bonus action", "Character.consume(\"bonus_action\")"],
+                ["Consume resource", "Character.consume(\"second_wind\")"],
+                ["Heal", "Dice.roll(\"d10\") + Character.getProp(\"fighter_level\")"]
+            ]
+        },
+        {
+            "id": "action_surge",
+            "name": "Action Surge",
+            "icon": "https://cdn-icons-png.flaticon.com/512/2097/2097359.png",
+            "script": [
+                ["Take bonus action", "Character.consume(\"bonus_action\")"],
+                ["Consume resource", "Character.consume(\"action_surge\")"],
+                ["Gain additional action", "Character.activate(\"action_surge_used\")"]
+            ]
+        }
+    ]
+}

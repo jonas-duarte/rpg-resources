@@ -1,0 +1,52 @@
+{
+    "classes": [
+        {
+            "name": "Rogue",
+            "props": {
+                "class": "Rogue",
+                "hit_dice": "1d8",
+                "proficiency_bonus": {
+                    "type": "script",
+                    "value": "[2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6][Character.level]"
+                },
+                "strength_save_proficiency": false,
+                "dexterity_save_proficiency": true,
+                "constitution_save_proficiency": false,
+                "intelligence_save_proficiency": false,
+                "wisdom_save_proficiency": false,
+                "charisma_save_proficiency": false,
+                "sneak_attack": {
+                    "type": "script",
+                    "value": "[0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4][Character.level]"
+                },
+                "hit_bonus": "Character.getProp(\"dexterity_modifier\") + Character.getProp(\"proficiency_bonus\")",
+                "damage_bonus": "Character.getProp(\"dexterity_modifier\") + Character.getPropIfActive(\"sneak_attack\", \"has_sneak_attack\", 0)"
+            },
+            "actions": [
+                "sneak_attack",
+                "cunning_action"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "id": "sneak_attack",
+            "name": "Sneak Attack",
+            "icon": "https://cdn-icons-png.flaticon.com/512/2801/2801102.png",
+            "script": [
+                ["Take action", "Character.consume(\"action\")"],
+                ["Consume resource", "Character.consumeIfActive(\"sneak_attack\", \"has_sneak_attack\")"],
+                ["Deal extra damage", "Dice.roll(\"2d6\") + (Dice.roll(\"1d6\") * Character.getProp(\"sneak_attack\"))"]
+            ]
+        },
+        {
+            "id": "cunning_action",
+            "name": "Cunning Action",
+            "icon": "https://cdn-icons-png.flaticon.com/512/738/738090.png",
+            "script": [
+                ["Take bonus action", "Character.consume(\"bonus_action\")"],
+                ["Select action", "Choose.fromList([\"Dash\", \"Disengage\", \"Hide\"])"]
+            ]
+        }
+    ]
+}
