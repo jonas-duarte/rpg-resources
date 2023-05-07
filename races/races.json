@@ -1,0 +1,606 @@
+{
+    "races": [
+        {
+            "name": "Aarakocra",
+            "props": {
+                "size": "M",
+                "speed": 30,
+                "fly_speed": true
+            }
+        },
+        {
+            "name": "Aasimar",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Aetherborn",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Astral",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Autognome",
+            "props": {
+                "size": "S",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Aven",
+            "props": {
+                "size": "M",
+                "speed": 25,
+                "fly_speed": 30
+            }
+        },
+        {
+            "name": "Bugbear",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Bullywug",
+            "props": {
+                "size": "M",
+                "speed": 20
+            }
+        },
+        {
+            "name": "Centaur",
+            "props": {
+                "size": "M",
+                "speed": 40
+            }
+        },
+        {
+            "name": "Changeling",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Custom",
+            "props": {
+                "size": "S,M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Deep",
+            "props": {
+                "size": "S",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Dhampir",
+            "props": {
+                "size": "S,M",
+                "speed": 35
+            }
+        },
+        {
+            "name": "Dragonborn",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Duergar",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Dwarf",
+            "props": {
+                "size": "M",
+                "speed": 25
+            }
+        },
+        {
+            "name": "Eladrin",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Elf",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Fairy",
+            "props": {
+                "size": "S",
+                "speed": 30,
+                "fly_speed": true
+            }
+        },
+        {
+            "name": "Firbolg",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Genasi",
+            "props": {
+                "size": "S,M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Giff",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Gith",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Githyanki",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Githzerai",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Glitchling",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Gnoll",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Gnome",
+            "props": {
+                "size": "S",
+                "speed": 20
+            }
+        },
+        {
+            "name": "Goblin",
+            "props": {
+                "size": "S",
+                "speed": 25
+            }
+        },
+        {
+            "name": "Goliath",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Grimlock",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Grung",
+            "props": {
+                "size": "S",
+                "speed": 25
+            }
+        },
+        {
+            "name": "Hadozee",
+            "props": {
+                "size": "S,M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Half-Elf",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Half-Orc",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Halfling",
+            "props": {
+                "size": "S",
+                "speed": 25
+            }
+        },
+        {
+            "name": "Harengon",
+            "props": {
+                "size": "S,M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Hexblood",
+            "props": {
+                "size": "S,M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Hobgoblin",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Human",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Kalashtar",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Kender",
+            "props": {
+                "size": "S",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Kenku",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Khenra",
+            "props": {
+                "size": "M",
+                "speed": 35
+            }
+        },
+        {
+            "name": "Kobold",
+            "props": {
+                "size": "S",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Kor",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Kuo-Toa",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Leonin",
+            "props": {
+                "size": "M",
+                "speed": 35
+            }
+        },
+        {
+            "name": "Lizardfolk",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Locathah",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Loxodon",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Merfolk",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Minotaur",
+            "props": {
+                "size": "M",
+                "speed": 30
+            },
+            "actions": [
+                "minotaur_horns"
+            ]
+        },
+        {
+            "name": "Naga",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Orc",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Owlfolk",
+            "props": {
+                "size": "S,M",
+                "speed": 30,
+                "fly_speed": 30
+            }
+        },
+        {
+            "name": "Owlin",
+            "props": {
+                "size": "S,M",
+                "speed": 30,
+                "fly_speed": true
+            }
+        },
+        {
+            "name": "Plasmoid",
+            "props": {
+                "size": "S,M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Rabbitfolk",
+            "props": {
+                "size": "S,M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Reborn",
+            "props": {
+                "size": "S,M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Satyr",
+            "props": {
+                "size": "M",
+                "speed": 35
+            }
+        },
+        {
+            "name": "Sea",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Shadar-Kai",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Shifter",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Simic",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Siren",
+            "props": {
+                "size": "M",
+                "speed": 25,
+                "fly_speed": 30
+            }
+        },
+        {
+            "name": "Skeleton",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Tabaxi",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Thri-kreen",
+            "props": {
+                "size": "S,M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Tiefling",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Tortle",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Triton",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Troglodyte",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Vampire",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Vedalken",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Verdan",
+            "props": {
+                "size": "V",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Viashino",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Warforged",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Yuan-Ti",
+            "props": {
+                "size": "S,M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Yuan-ti",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        },
+        {
+            "name": "Zombie",
+            "props": {
+                "size": "M",
+                "speed": 30
+            }
+        }
+    ],
+    "actions": [
+        {
+            "id": "minotaur_horns",
+            "name": "Minotaur Horns",
+            "icon": "https://cdn-icons-png.flaticon.com/512/6024/6024947.png",
+            "script": [
+                [
+                    "Take bonus action",
+                    "Character.consume(\"bonus_action\")"
+                ],
+                [
+                    "Hit",
+                    "Dice.roll(\"d20\") + Character.getProp(\"hit_bonus\")",
+                    "advantage"
+                ],
+                [
+                    "Damage",
+                    "Dice.roll(\"1d6\") + Character.getProp(\"damage_bonus\")",
+                    [
+                        "critical",
+                        "damage"
+                    ]
+                ]
+            ]
+        }
+    ]
+}
